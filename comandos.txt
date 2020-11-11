@@ -1,0 +1,91 @@
+###############1° yarn add sucrase nodemon -D
+
+Sucrase para poder usar import
+
+###############2° docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+ Criando um container: Passa o nome, senha, porta servidor e porta do docker e o nome da imagem.
+
+ Ele instala as paradas e rotarna um id único do nosso container
+ Com o comando run, várias aplicações pode usar esse container.
+ mas para frente vamos ver como criamos um container exclussivo para
+ uma aplicação.
+
+###############3° docker ps
+
+Vai listar todos os containers que estão em execução.
+
+###############4° docker ps -a
+
+Vai listar todos os containers que tem na máquina
+
+###############5° docker start nome
+
+Toda vez que reiniciar a máquina o container para de executar.
+
+###############6° docker log nome
+
+Para verificar o log
+
+###############7° yarn add eslint
+
+Ferramenta para ajudar a padronizar o código
+
+###############8°yarn eslint --init
+
+Para configurar o eslint
+
+############### eslint + prettier
+https://medium.com/@jeancabral/gatsbyjs-configurando-eslint-e-prettier-no-visual-studio-code-bba4a25a216
+
+
+###############9° yarn eslint --fix src --ext .js
+
+Para ajeitar todos os arquivos js da pasta
+
+
+
+##############10° yarn add sequelize
+
+instalando a dependencia do sequelize
+
+##############11° yarn add sequelize-cli -D
+
+Interface de linha de comandos que vai nos ajudar
+
+##############12° yarn add pg pg-hstore
+
+Precisa para para o dialect do sequelize usando postgres
+Olhar documentação.
+
+
+############## 13° yarn sequelize migration:create --name=create-users
+
+comando do sequelize-cli para criar migration
+
+
+############## 14° yarn sequelize db:migrate
+
+comando para o sequelize criar a tabela na base de dados
+
+
+
+############# 15° yarn sequelize db:migrate:undo:all
+
+undo para desfazer a ultima migrations e all para desfazer todas
+
+
+############# 16° yarn add bcryptjs
+
+extensão que vai gerar o hash da senha
+
+
+############# 17° yarn add jsonwebtoken
+
+extensão que vai gerar o token
+
+
+############# 18° yarn add yup
+
+É uma biblioteca de shcema validation.
+Define os campos que vão estar presente dentro do corpo da requisição
